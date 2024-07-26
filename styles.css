@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f7f7f7; /* light gray background */
+  background-image: linear-gradient(to bottom, #a5d1f5, #c2f3cc); /* gradient background */
+}
+
+header {
+  position: relative; /* add this to create a containing block */
+  background-color: #f2f8b6; /* blue background */
+  padding: 20px;
+  text-align: center;
+  color: #000000; /* white text color */
+  border-radius: 10px; /* rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+
+
+section {
+  flex-basis: 45%;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd; /* light gray border */
+  border-radius: 10px; /* rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  background-color: #fff; /* white background */
+  background-image: linear-gradient(to bottom, #fff, #f7f7f7); /* gradient background */
+}
+
+h2 {
+  margin-top: 0;
+  color: #337ab7; /* blue color for headings */
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* text shadow */
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f7f7f7; /* light gray background */
+  border: 1px solid #ddd; /* light gray border */
+  border-radius: 10px; /* rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+label {
+  width: 30%;
+  margin-right: 20px;
+  color: #337ab7; /* blue color for labels */
+}
+
+input, select, textarea {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ddd; /* light gray border */
+  border-radius: 5px; /* rounded corners */
+  background-color: #fff; /* white background */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+button {
+  background-color: #4CAF50; /* green color for buttons */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px; /* rounded corners */
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* text shadow */
+}
+
+button:hover {
+  background-color: #3e8e41; /* darker green color on hover */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd; /* light gray border */
+  border-radius: 10px; /* rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+th, td {
+  border: 1px solid #ddd; /* light gray border */
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0; /* light gray background for table headers */
+  color: #337ab7; /* blue color for table headers */
+  font-weight: bold;
+}
+
+#balance-section {
+  width: 95%;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff; /* white background */
+  border: 1px solid #ddd; /* light gray border */
+  border-radius: 10px; /* rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+#balance-amount {
+  font-size: 24px;
+  font-weight: bold;
+  color: #337ab7; /* blue color for balance amount */
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* text shadow */
+}
+
+#balance-value {
+  color: #00698f; /* dark blue color for balance value*/
+  font-size: 28px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* text shadow */
+}
+
+.side-by-side {
+  display: inline-block;
+  width: 45%;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section {
+  flex: 1; /* makes both sections equal width */
+}
+
+#logout-btn {
+  position: absolute; /* position the button absolutely */
+  top: 10px; /* adjust the top position to your liking */
+  right: 20px; /* adjust the right position to your liking */
+  font-size: 24px; /* adjust the font size to fit your icon */
+  padding: 10px 10px; /* add some padding around the icon */
+  background-color: #f2f8b6; /* add a light gray background color */
+  border: none; /* remove the default button border */
+  cursor: pointer; /* change the cursor to a pointing hand */
+  border-radius: 1px; /* add a rounded corner effect */
+}
+
+#logout-btn:hover {
+  background-color: #f2f8b6; /* change the background color on hover */
+}

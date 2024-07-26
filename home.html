@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petty Cash Management System</title>
+    <link rel="stylesheet" href="C:\src\Projects\WebDev Projects\Hackrush_3.0\src\assets\css\styles.css">
+</head>
+<body>
+    <header>
+      <button id="logout-btn" onclick="logoutUser()">👋</button>
+      <h1>Petty Cash Management System</h1>
+    </header>
+    <main>
+      <div class="container">
+        <section id="income-section">
+            <h2>Income</h2>
+            <form id="income-form">
+                <label for="income-date">Date:</label>
+                <input type="date" id="income-date" name="income-date">
+                <br>
+                <label for="income-head">Income Head:</label>
+                <select id="income-head" name="income-head">
+                    <option value="">Select Income Head</option>
+                    <option value="Fee Receipt">Fee Receipt</option>
+                    <option value="Rent">Rent</option>
+                    <option value="Project">Project</option>
+                </select>
+                <br>
+                <label for="income-amount">Amount:</label>
+                <input type="number" id="income-amount" name="income-amount">
+                <br>
+                <label for="income-description">Description:</label>
+                <textarea id="income-description" name="income-description"></textarea>
+                <br>
+                <button id="add-income-btn">Add Income</button>
+            </form>
+            <table id="income-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Income Head</th>
+                        <th>Amount</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody id="income-table-body">
+                    <!-- Income data will be displayed here -->
+                </tbody>
+            </table>
+        </section>
+        <section id="expense-section">
+            <h2>Expense</h2>
+            <form id="expense-form">
+                <label for="expense-date">Date:</label>
+                <input type="date" id="expense-date" name="expense-date">
+                <br>
+                <label for="expense-head">Expense Head:</label>
+                <select id="expense-head" name="expense-head">
+                    <option value="">Select Expense Head</option>
+                    <option value="Rent">Rent</option>
+                    <option value="Bill">Bill</option>
+                    <option value="EMI">EMI</option>
+                    <option value="EMI">Tax</option>
+                    <option value="EMI">Fees</option>
+                    <option value="EMI">Interest</option>
+                    <option value="EMI">Salary</option>
+                    <option value="EMI">Stationary</option>
+                    <option value="EMI">Printing</option>
+                    <option value="EMI">ADs</option>
+                </select>
+                <br>
+                <label for="expense-amount">Amount:</label>
+                <input type="number" id="expense-amount" name="expense-amount">
+                <br>
+                <label for="expense-description">Description:</label>
+                <textarea id="expense-description" name="expense-description"></textarea>
+                <br>
+                <button id="add-expense-btn">Add Expense</button>
+            </form>
+            <table id="expense-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Expense Head</th>
+                        <th>Amount</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody id="expense-table-body">
+                    <!-- Expense data will be displayed here -->
+                </tbody>
+            </table>
+        </section>
+      </div>
+      <div class="container2">
+        <section id="balance-section">
+          <h2>Balance</h2>
+          <p id="balance-amount">Balance: <span id="balance-value">0.00</span></p>
+        </section>
+      </div>
+    </main>
+    <script src="C:\src\Projects\WebDev Projects\Hackrush_3.0\src\assets\scripts\login.js"></script>
+</body>
+</html>
